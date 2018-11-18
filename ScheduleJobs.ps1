@@ -2,7 +2,7 @@
 Clear-host
 Get-Command -Module PSScheduledJob | Sort-Object Noun
 
-$diario= New-JobTrigger -Daily -at 3am
+$diario= New-JobTrigger -Daily -at 4pm
 $umavez = New-JobTrigger -Once -At (Get-Date).AddHours(1)
 $semanal = New-JobTrigger -Weekly -DaysOfWeek Monday -At 6pm
 
